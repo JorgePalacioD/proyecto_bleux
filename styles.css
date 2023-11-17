@@ -127,34 +127,46 @@ main > div > section > nav > li > a {
   height: 30.5rem;
 }
 
+.sheets_container {
+  background-image: url(/hojasFondo.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .phone {
-  position: absolute;
-  top: 10rem;
-  left: 50rem;
-  height: 22rem;
-  width: 13rem;
+  width: 11rem;
+  transform: translateX(-2rem);
+}
+
+.fonctionnalites {
+  width: 100%;
+  height: auto;
 }
 
 .fonctionnalites > div > h2 {
   padding: 4.5rem 30rem;
   color: #f41486;
   font-size: 2.5rem;
+  width: 100%;
+  height: auto;
 }
 
 .container_fonctionnalites {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .fonctionnalites > div > section {
   width: 50%;
-  height: 24rem;
+  height: auto;
 }
 
 .laptop {
-  width: 70%;
-  height: 70%;
+  height: 15rem;
   padding-left: 12rem;
 }
 
@@ -231,6 +243,11 @@ main > div > section > nav > li > a {
   justify-content: flex-start;
   align-items: center;
   font-size: 1rem;
+}
+
+.standard {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .sheet {
@@ -360,4 +377,168 @@ main > div > section > nav > li > a {
 
 .cerrar-menu {
   display: none;
+}
+
+@media (max-width: 920px) {
+  header > div > nav > a {
+    padding: 0.3rem;
+  }
+
+  header > div > img {
+    padding-left: 2rem;
+  }
+
+  main > div > section > h2 {
+    padding-left: 2rem;
+  }
+
+  main > div > section > p {
+    padding-left: 2rem;
+  }
+
+  main > div > section > nav {
+    padding: 0rem;
+  }
+
+  .laptop {
+    padding: 2rem;
+  }
+
+  .container_cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .container_cards > section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  .navbar_footer {
+    width: 75%;
+    padding-left: 3rem;
+  }
+
+  .media {
+    width: 35%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    zoom: 50%;
+  }
+
+  .container_logo {
+    display: none;
+    padding: 0;
+  }
+
+  header > div > img {
+    padding-left: 1rem;
+    display: none;
+  }
+
+  main > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.5rem;
+  }
+
+  .product_container,
+  .sheets_container {
+    width: 100%;
+  }
+
+  main > div > section > p {
+    padding: 0.7rem;
+  }
+
+  main > div > section > nav > li {
+    border-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .button_features {
+    margin-top: 1rem;
+  }
+
+  .phone {
+    width: 11rem;
+    transform: none;
+  }
+
+  .container_fonctionnalites {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .laptop {
+    height: 8rem;
+  }
+
+  .container_fonctionnalites > section > h2 {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .paragraph_h2 {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .fonctionnalites > div > h2 {
+    text-align: center;
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .container_fonctionnalites > section > h3 {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .paragraph_h3 {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .plans > p {
+    padding-bottom: 2rem;
+  }
+  .container_cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container_cards > section {
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    width: 70%;
+  }
+
+  .navbar_footer {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar_footer > p {
+    font-size: 12px;
+    right: 0;
+  }
+
+  .media {
+    width: 50%;
+    padding-right: 5rem;
+  }
 }
